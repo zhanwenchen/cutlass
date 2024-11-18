@@ -583,7 +583,7 @@ setup(
             '${name}_kernel.cu',
         ],
         include_dirs=['${cutlass_path}/include', '${cutlass_path}/tools/util/include'],
-        extra_compile_args=['-std=c++17']
+        extra_compile_args=['-std=c++17 -march=native']
         ),
     ],
     cmdclass={
